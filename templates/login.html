@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap Css/Js-->
+    <script src="../static/Vendor/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/Vendor/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <!--JQuery-->
+    <script src="../static/Vendor/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+    <!--Icon Kütüphanesi-->
+    <script src="../static/Vendor/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/js/all.js"></script>
+    <link rel="icon" href="../static/Vendor/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
+    <!--Özel Css/Js-->
+    <link rel="stylesheet" href="static/image/css/style.css">
+
+    <title>Taslak</title>
+</head>
+
+<body class="body overflow-x-hidden"
+    style="background-image: url('static/image/valfsan-arkaplan.png'); background-repeat: no-repeat; background-attachment:local;">
+
+    <!--Logo-->
+
+    <div class="container mt-5 mb-5 ">
+        <div class="row">
+            <div class="logo-div">
+                <img src="static/image/valfsan_logo2.png" class="valfsan-logo img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--Login Paneli Kullanıcı 'Adı:valfsan Şifre:123'-->
+
+    <div class="container login-ana-div">
+        <div class="row">
+
+            <div class="col-12 login-ana-div-2">
+                <form action="{{ url_for('login') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+                    <input type="submit" class="btn" value="Sign In"></br></br>
+                </form>
+{#                <form action="loginform" method="post" class="text-center">#}
+{#                    <div class="mb-3 mt-3">#}
+{#                        <label for="username" class="form-label">Kullanıcı Adı</label>#}
+{#                        <input type="text" class="form-control" id="username" name="username"#}
+{#                            placeholder="Kullanıcı Adı Giriniz !!! (Zorunlu)" required>#}
+{#                    </div>#}
+{##}
+{#                    <div class="mb-3">#}
+{#                        <label for="password" class="form-label">Şifre</label>#}
+{#                        <input type="password" class="form-control" id="password"#}
+{#                            placeholder="Şifre Giriniz !!! (Zorunlu)" name="password" required>#}
+{#                    </div>#}
+{##}
+{#                    <button type="submit" class="btn btn-primary">Giriş Yap</button>#}
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+
+{#    <script>}
+{#        function checkLogin() {#}
+{#            var username = document.getElementById("username").value;#}
+{#            var password = document.getElementById("password").value;#}
+{##}
+{#            if (username === "valfsan" && password === "123") {#}
+{##}
+{#                window.location.href = "pres-secim-ekrani.html";#}
+{#            } else {#}
+{#                alert("Giriş bilgileri yanlış. Lütfen kontrol edip tekrar deneyiniz.")#}
+{#            }#}
+{#        }#}
+{#    </script>#}
+
+</body>
+
+</html>
+
+
+
