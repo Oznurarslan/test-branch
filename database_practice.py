@@ -47,3 +47,9 @@ def get_logout_users():
         results = cursor.fetchall()
         return results
 #logınstatus 0 olan kullanıcının sisteme giriş yapmış ve daha sonra çıkış yapmış olduğunu gösterir
+
+
+def merhabagit():
+    '''
+    :return: Bu metod hiçbir işe yaramıyor.
+    '''
